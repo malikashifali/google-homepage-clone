@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    padding: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    margin-right: .7rem;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.navbar a img {
+    margin-top: -11px;
+    margin-left: .7rem;
+    padding: 7px;
+}
+
+.navbar a img:hover {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+main .logo {
+    height: 158px;
+    width: 299px;
+    margin-top: -110px;
+
+}
+
+input {
+    min-width: 40vw;
+    height: 44px;
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-radius: calc(.5 * 44px);
+    border: none;
+    padding-left: 50px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.search-icon {
+    position: fixed;
+    top: 283px;
+    left: 403px;
+}
+
+.icons {
+    position: relative;
+}
+
+.voice-icon {
+    position: absolute;
+    top: -37px;
+    left: 220px;
+    cursor: pointer;
+}
+
+.img-icon {
+    position: absolute;
+    top: -39px;
+    left: 250px;
+    cursor: pointer;
+}
+
+.add-shortcut {
+    margin-top: 20px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-shortcut .fa-plus {
+    padding: 16px;
+    background: rgba(241, 243, 244, 1.00);
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 14px;
+}
+
+.add-shortcut p {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.add-shortcut:hover {
+    background: rgba(218, 220, 224, 1);
+    opacity: .6;
+}
+
+button {
+    position: absolute;
+    width: 172px;
+    top: 100%;
+    right: 2%;
+    padding: 10px;
+    border-radius: 5rem;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 1px 6px 0 #20212447;
+
+}
+
+button a {
+    text-decoration: none;
+    color: #2565d3;
+    font-size: 12px;
+    margin-left: 10px;
+}
